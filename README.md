@@ -16,21 +16,20 @@ Code is super easy in markdown, which you can easily do inline `(require net/url
 ```
 #lang racket
 
-(require net/url)
+(require games/cards)
+
+(define numbers (list 1 2 3 4 5 6 7 8 9))
+
+(shuffle-list numbers 7)
 ```
 
-### My Library: (library name here)
+### My Library: Cards: Virtual Playing Cards Library
 Write what you did!
 Remember that this report must include:
  
-* a narrative of what you did
-* the code that you wrote
-* output from your code demonstrating what it produced
-* any diagrams or figures explaining your work 
+I used the virtual playing cards library. The program is short but sweet, it defines a list of 4 numbers, then it shuffles the four numbers before it outputs the new list of shuffled numbers. The shuffle procedure splits the list in half then taking the first number of one of the randomly selected side and adds to the shuffled list. The list does this 7 times.  
  
-The narrative itself should be no longer than 350 words. Yes, you can add more files and link or refer to them. This is github, handling files is awesome and easy!
 
-Ask questions publicly in the Piazza group.
 
 ### How to Do and Submit this assignment
 
